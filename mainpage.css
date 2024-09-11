@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 150px;
+    display: flex;
+}
+#inbox1,#inbox2{
+    border: solid 1px;
+    height: 150px;
+}
+#inbox1{
+    width: 150px;
+}
+#inbox2{
+    width: 1400px;
+    text-align: center;
+}
+#clgname{
+    font-size: 52px;
+    color: red;
+
+}
+#scroll{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(221, 12, 211);
+}
+#navbox{
+    border: solid 1px hidden;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 160px;
+    font-size: 21px;
+    float: left;
+    text-align: center;
+    line-height: 52px;
+    background-color: rgb(234, 145, 186);
+    margin-right: 1px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: rgb(234, 134, 47);
+}
+.outerbox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+    z-index: -1;
+}
+#in1{
+    width: 800px;
+    background-image: url(bits1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 800px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(bits2.jpeg);
+    }
+    20%{
+        background-image: url(bits3.jpeg);
+    }
+    30%{
+        background-image: url(bits4.jpeg);
+    }
+    40%{
+        background-image: url(bits5.jpeg);
+    }
+    50%{
+        background-image: url(bits6.jpeg);
+    }
+    60%{
+        background-image: url(bits7.jpeg);
+    }
+}
+#in2,#in3{
+    width: 400px;
+   
+}
+#pimg1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pimg2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#placebox{
+    border: solid 1px hidden;
+    height: 250px;
+}
+#placeimg{
+    padding-right: 50px;
+}
